@@ -1,0 +1,43 @@
+{
+  "name": "lodash.github.io",
+  "version": "0.1.0",
+  "description": "lodash.com web application stack",
+  "keywords": [
+    "lodash",
+    "documentation"
+  ],
+  "homepage": "http://justinhelmer.github.io/lodash.github.io/",
+  "author": "Justin Helmer jhelmer25@gmail.com",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "bin": {
+    "lodocs": "./bin/lodocs"
+  },
+  "repository": "lodash/lodash.github.io",
+  "scripts": {
+    "install": "./install.sh",
+    "postinstall": "node postinstall",
+    "start": "lodocs build --serve --open=2"
+  },
+  "dependencies": {
+    "lodash": "^4.0.1",
+    "normalize.css": "^3.0.3",
+    "pluralize": "^1.2.1"
+  },
+  "peerDependencies": {
+    "lodash": "^4.0.1"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "private": true,
+  "devDependencies": {
+    "chalk": "^1.1.1",
+    "commander": "^2.9.0",
+    "forever-monitor": "^1.7.0",
+    "gulp": "^3.9.0",
+    "opn": "^4.0.0"
+  }
+}

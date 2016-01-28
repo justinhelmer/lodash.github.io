@@ -1,7 +1,29 @@
-title: lodash
+title: Lodash
+description: A modern JavaScript utility library delivering modularity, performance, & extras.
+baseurl: "/lodash.github.io"
+url: "http://www.lodash.com"
 
-defaults:
-  - scope:
-      path: ''
-    values:
-      layout: base
+incremental: true
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - bin/
+  - lib/
+  - node_modules/
+  - CNAME
+  - config.ru
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - install.sh
+  - LICENSE
+  - package.json
+  - postinstall.js
+  - README.md
+
+# only needed so that gh-pages doesn't toss them during build
+keep_files:
+  - normalize.css
