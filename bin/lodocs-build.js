@@ -5,11 +5,11 @@
   var _ = require('lodash');
   var chalk = require('chalk');
   var gulp = require('gulp');
-  var open = require('opn');
+  var path = require('path');
   var program = require('commander');
   var fork = require('../lib/fork');
-  var path = require('path');
   var margin = _.pad('', 19);
+  var open = require('../lib/open');
 
   require('../gulpfile');
 
@@ -41,8 +41,10 @@
 
   function jekyll() {
     var serve = program.serve && env === 'development';
+    var command = serve ? 'lodocs' : 'jekyll';
 
     if (program.verbose && env === 'production') {
+      // @jdalton potential lodash optimization
       _.each(['serve', 'port', 'watch'], function(option) {
         if (program[option]) {
           warnOptionIsIgnored(option, '[env] is `production`');
@@ -70,13 +72,15 @@
       port = program.port;
     }
 
-    if (program.open) {
-      setTimeout(function() {
-        open('http://localhost:' + port);
-      }, program.open * 1000);
+    if (serve && program.open) {
+      open(program.open, '', port);
     }
 
-    fork('jekyll', args, {env: {NODE_ENV: env}, exit: true});
+    if (program.verbose && !program.quiet) {
+      args.push('--verbose');
+    }
+
+    fork(command, args, {env: {NODE_ENV: env}, exit: true});
   }
 
   /**

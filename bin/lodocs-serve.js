@@ -3,9 +3,9 @@
   'use strict';
 
   var _ = require('lodash');
-  //var open = require('opn');
   var program = require('commander');
   var fork = require('../lib/fork');
+  var open = require('../lib/open');
 
   program
       .option('-q, --quiet', 'output nothing (suppress STDOUT and STDERR)')
@@ -15,12 +15,13 @@
 
   var port = program.args[0] || '4000';
   var args = ['serve', '--port', port];
-  require('../lib/jekyll-args')(args);
 
   if (program.open) {
-    setTimeout(function() {
-      open('http://localhost:' + port);
-    }, program.open * 1000);
+    open(program.open, '', program.port);
+  }
+
+  if (program.verbose && !program.quiet) {
+    args.push('--verbose');
   }
 
   fork('jekyll', args);
