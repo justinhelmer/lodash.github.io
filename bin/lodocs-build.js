@@ -64,11 +64,6 @@
       }
     }
 
-    args.push('--config', path.resolve(__dirname, '../_config.yml'));
-    if (program.verbose && !program.quiet) {
-      args.push('--verbose');
-    }
-
     var port = 4000;
     if (serve && program.port) {
       args.push(program.port);
