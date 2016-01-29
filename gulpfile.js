@@ -6,7 +6,7 @@
   var jshint = require('gulp-jshint');
   var buildPath = '_site';
 
-  gulp.task('build', ['lintStyle', 'copy']);
+  gulp.task('build', ['lint', 'copy']);
   gulp.task('lint', lint);
   gulp.task('copy', ['lint'], copy);
 
