@@ -1,6 +1,6 @@
 title: Lodash
 description: A modern JavaScript utility library delivering modularity, performance, & extras.
-baseurl: "/lodash.github.io/"
+baseurl: "/lodash.github.io"
 url: "http://www.lodash.com"
 
 incremental: true

@@ -16,8 +16,8 @@
   program
       .option('-q, --quiet', 'output nothing (suppress STDOUT and STDERR)')
       .option('-v, --verbose', 'output additional information; takes precedence over `-q')
-      .option('-s, --serve', 'serve the app locally on port 4000 when the build completes\n' + margin +
-          '* enforces the `--watch` option\n' + margin + '* ignored unless [env] is `development`')
+      .option('-s, --serve', 'serve the app locally on port 4000 when the build completes\n' + margin + '* enforces the `--watch` option\n' + margin +
+          '* ignored unless [env] is `development`')
       .option('-o, --open <n>', 'launch the site in a browser `n` seconds after it begins being served\n' + margin +
           '* ignored unless `--serve` is set\n' + margin + '* ignored unless [env] is `development`')
       .option('-p, --port <n>', 'specify a port to to serve on, i.e. `serve [port]`\n' + margin +
@@ -49,7 +49,7 @@
         if (program[option]) {
           warnOptionIsIgnored(option, '[env] is `production`');
         }
-      })
+      });
     }
 
     if (!serve && env === 'development') {

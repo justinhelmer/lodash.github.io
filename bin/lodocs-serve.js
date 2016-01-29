@@ -17,7 +17,7 @@
   var args = ['serve', '--port', port];
 
   if (program.open) {
-    open(program.open, '', program.port);
+    open(program.open, '', port);
   }
 
   if (program.verbose && !program.quiet) {
