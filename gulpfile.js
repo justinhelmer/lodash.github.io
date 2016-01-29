@@ -2,27 +2,28 @@
   'use strict';
 
   var gulp = require('gulp');
-  var fork = require('./lib/fork');
   var jscs = require('gulp-jscs');
+  var jshint = require('gulp-jshint');
   var buildPath = '_site';
 
-  gulp.task('build', ['lintStyle', 'copySCSS']);
-  gulp.task('lintStyle', lintStyle);
-  gulp.task('copySCSS', ['lintStyle'], copySCSS);
+  gulp.task('build', ['lintStyle', 'copy']);
+  gulp.task('lint', lint);
+  gulp.task('copy', ['lint'], copy);
 
-  function copySCSS() {
+  function copy() {
     var files = ['node_modules/normalize.css/normalize.css'];
     gulp.src(files).pipe(gulp.dest(buildPath + '/css'));
   }
 
-  function lintStyle() {
+  function lint() {
     var files = ['bin/*.js', 'lib/*.js', 'gulpfile.js'];
 
     return gulp
         .src(files)
+        .pipe(jshint())
         .pipe(jscs())
-        .pipe(require('gulp-jscs-stylish')())
-        .pipe(jscs.reporter('fail'));
-
+        .pipe(require('gulp-jscs-stylish').combineWithHintResults())
+        .pipe(jshint.reporter('jshint-stylish'))
+        .pipe(jshint.reporter('fail'));
   }
 })();

@@ -2,7 +2,6 @@
 (function() {
   'use strict';
 
-  var _ = require('lodash');
   var program = require('commander');
   var fork = require('../lib/fork');
   var open = require('../lib/open');

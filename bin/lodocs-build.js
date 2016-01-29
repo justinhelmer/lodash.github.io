@@ -5,7 +5,6 @@
   var _ = require('lodash');
   var chalk = require('chalk');
   var gulp = require('gulp');
-  var path = require('path');
   var program = require('commander');
   var fork = require('../lib/fork');
   var margin = _.pad('', 19);
