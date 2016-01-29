@@ -4,7 +4,6 @@
   var gulp = require('gulp');
   var fork = require('./lib/fork');
   var jscs = require('gulp-jscs');
-  var notify = require('gulp-notify');
   var buildPath = '_site';
 
   gulp.task('build', ['lintStyle', 'copySCSS']);
