@@ -1,6 +1,7 @@
 node_modules/
 _site/
 
+.idea/workspace.xml
 .sass-cache/
 .DS_Store
 .jekyll-metadata
