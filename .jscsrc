@@ -114,7 +114,7 @@
   "validateParameterSeparator": ", ",
 
   // We don't have docs set up yet
-  "jsDoc":false
+  "jsDoc": false
   /**
   "jsDoc": {
       "checkAnnotations": "closurecompiler",

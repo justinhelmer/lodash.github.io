@@ -4,11 +4,9 @@
 
 The lodash website.
 
-### prerequisites
-
-`OSX` or `Ubuntu` (only `14.04` officially supported).
-
 ### setup
+
+> only works for `OSX` or `Ubuntu` (`14.04` officially supported).
 
 ```bash
 npm install
@@ -20,8 +18,14 @@ npm install
 npm start
 ```
 
-### building/serving/etc.
+### update $PATH (optional)
 
+```bash
+npm link
 ```
+
+### build/serve/etc.
+
+```bash
 lodocs # will display man page
 ```
