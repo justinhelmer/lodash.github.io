@@ -10,9 +10,6 @@
   "homepage": "http://justinhelmer.github.io/lodash.github.io/",
   "author": "Justin Helmer jhelmer25@gmail.com",
   "repository": "justinhelmer/lodash.github.io",
-  "dependencies": {
-    "lodocs": "justinhelmer/lodocs"
-  },
   "engines": {
     "node": "*"
   },
@@ -20,5 +17,8 @@
     "install": "node ./node_modules/.bin/lodocs install",
     "start": "node node_modules/.bin/lodocs build --serve --open=2"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "lodocs": "^0.1.1"
+  }
 }
