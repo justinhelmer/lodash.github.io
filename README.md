@@ -21,7 +21,7 @@ npm start
 ### update $PATH (optional)
 
 ```bash
-npm link
+npm link lodocs
 ```
 
 ### build/serve/etc.
