@@ -17,8 +17,7 @@
     "node": "*"
   },
   "scripts": {
-    "install": "node node_modules/.bin/lodocs install",
-    "postinstall": "node postinstall",
+    "install": "node ./node_modules/.bin/lodocs install",
     "start": "node node_modules/.bin/lodocs build --serve --open=2"
   },
   "private": true
