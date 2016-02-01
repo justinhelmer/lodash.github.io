@@ -19,6 +19,6 @@
   },
   "private": true,
   "dependencies": {
-    "lodocs": "^0.1.5"
+    "lodocs": "^0.1.7"
   }
 }
