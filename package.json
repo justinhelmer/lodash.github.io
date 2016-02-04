@@ -14,7 +14,6 @@
     "node": "*"
   },
   "scripts": {
-    "postinstall": "node node_modules/.bin/lodocs install",
     "link-lodocs": "cd node_modules/lodocs && npm link",
     "unlink-lodocs": "cd node_modules/lodocs && npm unlink",
     "start": "node node_modules/.bin/lodocs build --serve --open=2"
