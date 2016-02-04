@@ -4,10 +4,7 @@ baseurl: "/lodash.github.io"
 url: "http://www.lodash.com"
 
 incremental: true
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
+markdown: redcarpet
 
 exclude:
   - bin/
