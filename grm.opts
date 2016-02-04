@@ -2,3 +2,4 @@
 --path lodash.js
 --recent 10
 --repo lodash/lodash
+--verbose
