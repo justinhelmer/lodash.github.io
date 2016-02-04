@@ -15,8 +15,11 @@ exclude:
   - node_modules/
   - CNAME
   - config.ru
+  - deploy.sh
+  - docs-header.md
   - Gemfile
   - Gemfile.lock
+  - grm.opts
   - gulpfile.js
   - install.sh
   - LICENSE
@@ -24,6 +27,6 @@ exclude:
   - postinstall.js
   - README.md
 
-# only needed so that gh-pages doesn't toss them during build
 keep_files:
+  - docs
   - normalize.css
