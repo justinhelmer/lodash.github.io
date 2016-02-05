@@ -1,5 +1,5 @@
 --docs pages/docs
 --path lodash.js
---recent 10
 --repo lodash/lodash
+--top 10
 --verbose
