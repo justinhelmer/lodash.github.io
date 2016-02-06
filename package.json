@@ -1,6 +1,6 @@
 {
   "name": "lodash.github.io",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "lodash.com web application stack",
   "keywords": [
     "lodash",
@@ -20,6 +20,6 @@
   "private": true,
   "devDependencies": {
     "eslint-config-google": "^0.3.0",
-    "lodocs": "^0.4.1"
+    "lodocs": "^0.4.2"
   }
 }
