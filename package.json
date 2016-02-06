@@ -11,7 +11,7 @@
   "author": "Justin Helmer jhelmer25@gmail.com",
   "repository": "justinhelmer/lodash.github.io",
   "engines": {
-    "node": "*"
+    "node": ">=0.12"
   },
   "scripts": {
     "link-lodocs": "cd node_modules/lodocs && npm link",
