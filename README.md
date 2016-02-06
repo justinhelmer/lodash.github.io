@@ -4,18 +4,18 @@
 
 The lodash website.
 
-### fully-automated setup
+### Fully-automated setup
 
-> Only works for `OSX`. Assumes `npm` exists
+> Only works for `OSX`. Assumes `node` & `npm` are installed.
 
 ```bash
 $ npm install && node node_modules/.bin/lodocs install
 ```
 
-### manual setup
+### Manual setup
 
-1. Install [Ruby](https://www.ruby-lang.org/en/) `2.1.4`
-2. Install [Node](https://www.npmjs.com/) >= `0.12.x`
+1. Install [Ruby](https://www.ruby-lang.org/en/) `2.1.4` (used for [Jeyll](https://jekyllrb.com/) static site generation).
+2. Install [Node](https://www.npmjs.com/) >= `0.12.x` (for everything else).
 3. Install project dependencies:
 
 ```bash
@@ -23,22 +23,14 @@ $ npm install
 $ cd ./node_modules/lodocs && bundle
 ```
 
-### launch
+### Launch
 
 ```bash
 $ npm start
 ```
 
-**NOTE:** There is currently an unknown issue with `gulp-jscs` if you are using `Ubuntu`. Adding `jscs()` to the `pipe()` in the `lodocs` `gulpfile.js` seems to cause issues.
-
-### update $PATH (optional)
+### Build / serve / etc.
 
 ```bash
-$ npm run link-lodocs
-```
-
-### build/serve/etc.
-
-```bash
-$ lodocs # will display man page
+$ npm run lodocs # will display man page
 ```

@@ -14,8 +14,7 @@
     "node": ">=0.12"
   },
   "scripts": {
-    "link-lodocs": "cd node_modules/lodocs && npm link",
-    "unlink-lodocs": "cd node_modules/lodocs && npm unlink",
+    "lodocs": "lodocs",
     "start": "lodocs build && lodocs serve --open 3"
   },
   "private": true,
