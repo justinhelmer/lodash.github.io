@@ -1,7 +1,8 @@
-node_modules/
-_site/
-.idea/workspace.xml
 .sass-cache/
+.idea/workspace.xml
 .DS_Store
 .jekyll-metadata
+
+build/
+node_modules/
 npm-debug.log
