@@ -14,11 +14,13 @@
     "node": ">=0.12"
   },
   "scripts": {
+    "grm": "grm",
     "lodocs": "lodocs",
     "start": "lodocs build && lodocs serve"
   },
   "private": true,
   "devDependencies": {
+    "gh-release-manager": "^0.6.0",
     "lodocs": "^0.6.1"
   }
 }
