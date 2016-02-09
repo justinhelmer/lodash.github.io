@@ -57,13 +57,14 @@
       });
 
       it('should reject with the gulp error as the rejection value when the error event is triggered', function(done) {
-        result.catch(function(err) {
+        result.catch(expectError).done();
+        callbacks.error(new Error('ERROR'));
+
+        function expectError(err) {
           expect(err.message).to.eq('ERROR');
           expect(result.isFulfilled()).to.be.false();
           done();
-        });
-
-        callbacks.error(new Error('ERROR'));
+        }
       });
     });
 
