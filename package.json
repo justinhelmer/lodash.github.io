@@ -24,7 +24,8 @@
   },
   "scripts": {
     "grm": "grm",
-    "start": "grm release && grm serve"
+    "start": "grm release && grm serve",
+    "test": "mocha --colors"
   },
   "private": true,
   "devDependencies": {
