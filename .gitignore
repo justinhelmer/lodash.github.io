@@ -4,5 +4,8 @@
 .jekyll-metadata
 
 build/
+source/css/normalize
 node_modules/
 npm-debug.log
+source/css/_normalize.scss
+source/css/_support-for.scss
