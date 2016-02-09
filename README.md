@@ -6,6 +6,8 @@ The lodash website.
 
 ### Download releases, build, test, deploy
 
+> Deploy not yet implemented
+
 ```bash
 $ npm run grm release
 ```
@@ -23,6 +25,8 @@ $ npm start
 ```
 
 ### Download releases, build, test
+
+> --dry-run not yet implemented
 
 ```bash
 $ npm run grm release --dry-run

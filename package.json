@@ -24,7 +24,7 @@
   },
   "scripts": {
     "grm": "grm",
-    "start": "grm release --dry-run && grm serve"
+    "start": "grm release && grm serve"
   },
   "private": true,
   "devDependencies": {
