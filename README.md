@@ -11,7 +11,9 @@ The lodash website.
 
 ## Installation
 
-This is a _private_ module and thus is not published to the `npm` registry. To install locally:
+This is a _private_ `npm` module and thus is **not** published to the `npm` registry. That is not to say that [contributions](#contributions) are not welcome.
+
+To install locally:
 
 ```bash
 $ git clone https://github.com/justinhelmer/lodash.github.io
@@ -21,9 +23,15 @@ $ npm install
 
 ## Usage
 
-**Simple.**
+Uses [GitHub Release Manager](https://github.com/justinhelmer/gh-release-manager).
 
-### Download releases, build, test, deploy
+### Download releases, parse JSDoc headers, build, test, launch development server
+
+```bash
+$ npm start
+```
+
+### Download releases, parse JSDoc headers, build, test, deploy
 
 > Deploy not yet implemented
 
@@ -31,13 +39,7 @@ $ npm install
 $ npm run grm release
 ```
 
-### Download releases, build, test, launch development server
-
-```bash
-$ npm start
-```
-
-### Download releases, build, test
+### Download releases, parse JSDoc headers, build, test
 
 > --dry-run not yet implemented
 
