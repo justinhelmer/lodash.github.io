@@ -25,14 +25,16 @@
   "scripts": {
     "grm": "grm",
     "start": "grm release && grm serve",
-    "test": "mocha --colors"
+    "test": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "private": true,
   "devDependencies": {
     "bluebird": "^3.2.2",
     "chai": "^3.5.0",
+    "coveralls": "^2.11.6",
     "gh-release-manager": "^0.8.0",
     "gulp": "^3.9.1",
+    "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
     "normalize-scss": "^4.0.3",
     "sinon": "^1.17.3",

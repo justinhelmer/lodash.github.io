@@ -4,6 +4,7 @@
 .jekyll-metadata
 
 build/
+coverage/
 source/css/normalize
 node_modules/
 npm-debug.log
