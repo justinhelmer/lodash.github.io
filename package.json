@@ -1,26 +1,36 @@
 {
   "name": "lodash.github.io",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "lodash.com web application stack",
   "keywords": [
     "lodash",
-    "lodocs",
-    "documentation"
+    "documentation",
+    "manage",
+    "release",
+    "website"
   ],
   "homepage": "http://justinhelmer.github.io/lodash.github.io/",
   "author": "Justin Helmer jhelmer25@gmail.com",
+  "files": [
+    ".eslintrc.js",
+    "docs-header.md",
+    "grm.opts",
+    "lib",
+    "source"
+  ],
   "repository": "justinhelmer/lodash.github.io",
   "engines": {
     "node": ">=0.12"
   },
   "scripts": {
     "grm": "grm",
-    "lodocs": "lodocs",
-    "start": "lodocs build && lodocs serve"
+    "start": "grm release --dry-run && grm serve"
   },
   "private": true,
   "devDependencies": {
-    "gh-release-manager": "^0.6.0",
-    "lodocs": "^0.6.1"
+    "bluebird": "^3.2.2",
+    "gh-release-manager": "^0.7.0",
+    "gulp": "^3.9.0",
+    "normalize-scss": "^4.0.3"
   }
 }
