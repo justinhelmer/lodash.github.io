@@ -31,48 +31,48 @@
       expect(gulp.task).to.have.been.calledWithMatch('copyCSS');
     });
 
-    //describe('#build', function() {
-    //  var result;
-    //
-    //  beforeEach(function() {
-    //    result = build();
-    //  });
-    //
-    //  it('should attach an event that is triggered when the gulp task succeeds', function() {
-    //    expect(gulp.on).to.have.been.calledWithMatch('stop');
-    //  });
-    //
-    //  it('should attach an event that is triggered when the gulp task fails', function() {
-    //    expect(gulp.on).to.have.been.calledWithMatch('error');
-    //  });
-    //
-    //  it('should start the copyCSS gulp task', function() {
-    //    expect(gulp.start).to.have.been.calledWithExactly('copyCSS');
-    //  });
-    //
-    //  it('should resolve with undefined as the fulfillment value when the success event is triggered', function() {
-    //    callbacks.stop();
-    //    expect(result.isFulfilled()).to.be.true();
-    //    expect(result.value()).to.be.undefined();
-    //  });
-    //
-    //  it('should reject with the gulp error as the rejection value when the error event is triggered', function(done) {
-    //    result.catch(expectError).done();
-    //    callbacks.error(new Error('ERROR'));
-    //
-    //    /**
-    //     * Validate that an error was thrown and that the promise was not fulfilled.
-    //     *
-    //     * @name expectError
-    //     * @param {Error} err - The error object (thrown by attempting to run the gulp task).
-    //     */
-    //    function expectError(err) {
-    //      expect(err.message).to.eq('ERROR');
-    //      expect(result.isFulfilled()).to.be.false();
-    //      done();
-    //    }
-    //  });
-    //});
+    describe('#build', function() {
+      var result;
+
+      beforeEach(function() {
+        result = build();
+      });
+
+      it('should attach an event that is triggered when the gulp task succeeds', function() {
+        expect(gulp.on).to.have.been.calledWithMatch('stop');
+      });
+
+      it('should attach an event that is triggered when the gulp task fails', function() {
+        expect(gulp.on).to.have.been.calledWithMatch('error');
+      });
+
+      it('should start the copyCSS gulp task', function() {
+        expect(gulp.start).to.have.been.calledWithExactly('copyCSS');
+      });
+
+      it('should resolve with undefined as the fulfillment value when the success event is triggered', function() {
+        callbacks.stop();
+        expect(result.isFulfilled()).to.be.true();
+        expect(result.value()).to.be.undefined();
+      });
+
+      it('should reject with the gulp error as the rejection value when the error event is triggered', function(done) {
+        result.catch(expectError).done();
+        callbacks.error(new Error('ERROR'));
+
+        /**
+         * Validate that an error was thrown and that the promise was not fulfilled.
+         *
+         * @name expectError
+         * @param {Error} err - The error object (thrown by attempting to run the gulp task).
+         */
+        function expectError(err) {
+          expect(err.message).to.eq('ERROR');
+          expect(result.isFulfilled()).to.be.false();
+          done();
+        }
+      });
+    });
 
     describe('#copyCSS', function() {
       beforeEach(function() {
