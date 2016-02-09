@@ -29,8 +29,12 @@
   "private": true,
   "devDependencies": {
     "bluebird": "^3.2.2",
+    "chai": "^3.5.0",
     "gh-release-manager": "^0.7.0",
     "gulp": "^3.9.0",
-    "normalize-scss": "^4.0.3"
+    "mocha": "^2.4.5",
+    "normalize-scss": "^4.0.3",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
   }
 }
