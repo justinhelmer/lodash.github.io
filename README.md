@@ -37,3 +37,12 @@ $ npm run grm release --dry-run
 ```bash
 $ npm run grm serve
 ```
+
+### Passing arguments to grm
+
+When using [npm-run-script](https://docs.npmjs.com/cli/run-script), like in the examples above, arguments after the `--` are passed to `grm`. For example:
+ 
+```bash
+# download & store releases and be extra noisy
+$ npm run grm download -- --keep releases --verbose 2
+```
