@@ -19,6 +19,6 @@
   },
   "private": true,
   "devDependencies": {
-    "lodocs": "^0.5.0"
+    "lodocs": "^0.6.0"
   }
 }
