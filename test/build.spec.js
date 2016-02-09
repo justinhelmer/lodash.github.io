@@ -60,6 +60,12 @@
         result.catch(expectError).done();
         callbacks.error(new Error('ERROR'));
 
+        /**
+         * Validate that an error was thrown and that the promise was not fulfilled.
+         *
+         * @name expectError
+         * @param {Error} err - The error object (thrown by attempting to run the gulp task).
+         */
         function expectError(err) {
           expect(err.message).to.eq('ERROR');
           expect(result.isFulfilled()).to.be.false();
@@ -91,6 +97,12 @@
       });
     });
 
+    /**
+     * Stub all gulp methods used by build.js. Additionally delete the build.js module from require cache to force it to be reloaded
+     * on the next require() call.
+     *
+     * @name stubGulp
+     */
     function stubGulp() {
       pipe = sinon.spy();
 
@@ -103,14 +115,27 @@
       // Since gulp.task is called when module is loaded, wipe the cache to ensure its reloaded
       delete require.cache[require.resolve('../lib/build')];
 
+      /**
+       * Store a callback in memory for use later. Useful for registering a stub call, then executing the callback pased as an argument.
+       *
+       * @name callback
+       * @param {string} trigger - The trigger name. Typically the first param of the function; i.e. gulp.on(trigger, cb), gulp.task(trigger, cb).
+       * @param {function} cb - The callback to register for execution later. Gets stored in memory under callbacks[trigger].
+       */
       function callback(trigger, cb) {
         callbacks[trigger] = cb;
       }
 
-      function src(files) {
+      /**
+       * Mocked version of gulp.src() specifically for use in testing build.js.
+       *
+       * @name src
+       * @return {object} - Contains a single property 'pipe', which is a sinon spy scoped within the common closure of the build.js test suite.
+       */
+      function src() {
         return {
           pipe: pipe
-        }
+        };
       }
     }
   });
