@@ -1,6 +1,6 @@
 --build lib/build.js
 --docs source/docs
---path lodash.js
+--lib lodash.js
 --repo lodash/lodash
 --top 10
 --verbose
