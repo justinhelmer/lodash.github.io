@@ -4,6 +4,12 @@
 
 The lodash website.
 
+### Display the contents of the manual
+
+```bash
+$ npm run lodocs --help
+```
+
 ### Download releases, build, test, launch development server
 
 ```bash
