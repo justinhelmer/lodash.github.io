@@ -23,9 +23,10 @@
     "node": ">=0.12"
   },
   "scripts": {
+    "coverage": "istanbul cover _mocha --report lcovonly -- --colors -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "grm": "grm",
     "start": "grm release && grm serve",
-    "test": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test": "mocha --colors"
   },
   "private": true,
   "devDependencies": {
