@@ -7,7 +7,7 @@ The lodash website.
 ### Display the contents of the manual
 
 ```bash
-$ npm run lodocs --help
+$ npm run lodocs
 ```
 
 ### Download releases, build, test, launch development server
