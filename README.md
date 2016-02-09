@@ -7,7 +7,7 @@ The lodash website.
 [![build status](https://travis-ci.org/justinhelmer/lodash.github.io.svg?branch=master)](https://travis-ci.org/justinhelmer/lodash.github.io/)
 [![coverage status](https://coveralls.io/repos/github/justinhelmer/lodash.github.io/badge.svg?branch=master)](https://coveralls.io/github/justinhelmer/lodash.github.io?branch=master)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/lodash/lodash.github.io/issues)
-[![devDependency status](https://david-dm.org/justinhelmer/lodash.github.io/dev-status.svg)
+[![devDependency status](https://david-dm.org/justinhelmer/lodash.github.io/dev-status.svg)](https://github.com/justinhelmer/lodash.github.io)
 
 ## Installation
 
@@ -69,7 +69,7 @@ $ npm run grm download -- --keep releases --verbose 2
 ## Contributions
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/lodash/lodash.github.io/issues)
-[![devDependency status](https://david-dm.org/justinhelmer/lodash.github.io/dev-status.svg)
+[![devDependency status](https://david-dm.org/justinhelmer/lodash.github.io/dev-status.svg)](https://github.com/justinhelmer/lodash.github.io)
 
 ## More help
 
