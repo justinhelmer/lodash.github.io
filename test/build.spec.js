@@ -6,12 +6,15 @@
   var gulp = require('gulp');
   var path = require('path');
   var sinon = require('sinon');
-  var Promise = require('bluebird');
-  var callbacks, sandbox;
+  var callbacks;
+  var sandbox;
+
+  chai.use(require('dirty-chai'));
   chai.use(require('sinon-chai'));
 
   describe('lib/build.js', function() {
-    var build, pipe;
+    var build;
+    var pipe;
 
     beforeEach(function() {
       callbacks = {};
@@ -49,14 +52,14 @@
 
       it('should resolve with undefined as the fulfillment value when the success event is triggered', function() {
         callbacks.stop();
-        expect(result.isFulfilled()).to.be.true;
-        expect(result.value()).to.be.undefined;
+        expect(result.isFulfilled()).to.be.true();
+        expect(result.value()).to.be.undefined();
       });
 
       it('should reject with the gulp error as the rejection value when the error event is triggered', function(done) {
         result.catch(function(err) {
           expect(err.message).to.eq('ERROR');
-          expect(result.isFulfilled()).to.be.false;
+          expect(result.isFulfilled()).to.be.false();
           done();
         });
 
