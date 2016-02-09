@@ -4,8 +4,20 @@
 
 The lodash website.
 
-### Build
+### Download releases, build, test, launch development server
+
+```bash
+$ npm start
+```
+
+### Download releases, build, test
 
 ```bash
 $ npm run lodocs build
+```
+
+### launch development server
+
+```bash
+$ npm run lodocs serve
 ```
