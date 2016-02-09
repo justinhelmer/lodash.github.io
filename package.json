@@ -41,5 +41,8 @@
     "normalize-scss": "^4.0.3",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "eslint-plugin-mocha": "^1.1.0"
   }
 }
