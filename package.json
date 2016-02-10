@@ -34,7 +34,7 @@
     "chai": "^3.5.0",
     "coveralls": "^2.11.6",
     "dirty-chai": "^1.2.2",
-    "gh-release-manager": "^0.9.3",
+    "gh-release-manager": "^0.11.0",
     "gulp": "^3.9.1",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
