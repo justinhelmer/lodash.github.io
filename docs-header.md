@@ -1,5 +1,5 @@
 ---
 layout:    documentation.html
-title:     Lodash Documentation - [release]
+title:     Documentation - [release]
 permalink: /docs/[release]/
 ---

@@ -1,6 +1,6 @@
 {
   "name": "lodash.github.io",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "lodash.com web application stack",
   "keywords": [
     "lodash",
@@ -34,7 +34,7 @@
     "chai": "^3.5.0",
     "coveralls": "^2.11.6",
     "dirty-chai": "^1.2.2",
-    "gh-release-manager": "^0.8.3",
+    "gh-release-manager": "^0.9.2",
     "gulp": "^3.9.1",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
