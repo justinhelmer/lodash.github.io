@@ -3,4 +3,5 @@
 --lib lodash.js
 --repo lodash/lodash
 --top 10
+--url-base /lodash.github.io
 --verbose
