@@ -33,18 +33,14 @@ $ npm start
 
 ### Download releases, parse JSDoc headers, build, test, deploy
 
-> Deploy not yet implemented
-
 ```bash
-$ npm run grm release
+$ npm run grm
 ```
 
 ### Download releases, parse JSDoc headers, build, test
 
-> --dry-run not yet implemented
-
 ```bash
-$ npm run grm release --dry-run
+$ npm run grm release --no-deploy
 ```
 
 ### launch development server
