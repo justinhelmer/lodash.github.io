@@ -6,6 +6,7 @@
 build/
 coverage/
 source/css/normalize
+source/docs
 node_modules/
 npm-debug.log
 source/css/_normalize.scss
