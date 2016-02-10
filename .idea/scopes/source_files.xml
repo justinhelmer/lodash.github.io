@@ -1,3 +1,0 @@
-<component name="DependencyValidationManager">
-  <scope name="source files" pattern="file[lodash.github.io]:source/partials//*||file[lodash.github.io]:_layouts//*||file[lodash.github.io]:_sass//*||file[lodash.github.io]:bin//*||file[lodash.github.io]:source/css//*||file[lodash.github.io]:lib//*||file[lodash.github.io]:pages//*||file:gulpfile.js" />
-</component>
