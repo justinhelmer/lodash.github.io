@@ -16,7 +16,7 @@ This is a _private_ `npm` module and thus is **not** published to the `npm` regi
 To install locally:
 
 ```bash
-$ git clone https://github.com/justinhelmer/lodash.github.io
+$ git clone justinhelmer/lodash.github.io   # check out hub to use this syntax: https://github.com/github/hub
 $ cd lodash.github.io
 $ npm install
 ```
