@@ -35,6 +35,7 @@
     "coveralls": "^2.11.6",
     "dirty-chai": "^1.2.2",
     "eslint-config-google": "^0.3.0",
+    "eslint-plugin-mocha": "^1.1.0",
     "gh-release-manager": "^0.12.1",
     "gulp": "^3.9.1",
     "istanbul": "^0.4.2",
