@@ -37,7 +37,47 @@
     <main>
       <section id="content" class="wrapper">
         <h1></h1>
-        <p>This is the index page</p>
+        <p><img src="http://justinhelmer.github.io/lodash.github.io/images/logo.png" alt="lodash"></p>
+<hr>
+<p>The lodash website.</p>
+<p><a href="https://travis-ci.org/justinhelmer/lodash.github.io/"><img src="https://travis-ci.org/justinhelmer/lodash.github.io.svg?branch=master" alt="build status"></a>
+<a href="https://coveralls.io/github/justinhelmer/lodash.github.io?branch=master"><img src="https://coveralls.io/repos/github/justinhelmer/lodash.github.io/badge.svg?branch=master" alt="coverage status"></a>
+<a href="https://github.com/lodash/lodash.github.io/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="contributions welcome"></a>
+<a href="https://github.com/justinhelmer/lodash.github.io"><img src="https://david-dm.org/justinhelmer/lodash.github.io/dev-status.svg" alt="devDependency status"></a></p>
+<h2 id="installation">Installation</h2>
+<p>This is a <em>private</em> <code>npm</code> module and thus is <strong>not</strong> published to the <code>npm</code> registry. That is not to say that <a href="#contributions">contributions</a> are not welcome.</p>
+<p>To install locally:</p>
+<pre><code class="lang-bash">$ git clone justinhelmer/lodash.github.io   # check out hub to use this syntax: https://github.com/github/hub
+$ cd lodash.github.io
+$ npm install
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>Uses <a href="https://github.com/justinhelmer/gh-release-manager">GitHub Release Manager</a>.</p>
+<h3 id="download-releases-parse-jsdoc-headers-build-test-launch-development-server">Download releases, parse JSDoc headers, build, test, launch development server</h3>
+<pre><code class="lang-bash">$ npm start
+</code></pre>
+<h3 id="download-releases-parse-jsdoc-headers-build-test-deploy">Download releases, parse JSDoc headers, build, test, deploy</h3>
+<pre><code class="lang-bash">$ npm run grm
+</code></pre>
+<h3 id="download-releases-parse-jsdoc-headers-build-test">Download releases, parse JSDoc headers, build, test</h3>
+<pre><code class="lang-bash">$ npm run grm release --no-deploy
+</code></pre>
+<h3 id="launch-development-server">launch development server</h3>
+<pre><code class="lang-bash">$ npm run grm serve
+</code></pre>
+<h3 id="display-the-contents-of-the-manual">Display the contents of the manual</h3>
+<pre><code class="lang-bash">$ npm run grm help
+</code></pre>
+<h3 id="passing-arguments-to-grm">Passing arguments to grm</h3>
+<p>When using <a href="https://docs.npmjs.com/cli/run-script">npm-run-script</a>, like in the examples above, arguments after the <code>--</code> are passed to <code>grm</code>. For example:</p>
+<pre><code class="lang-bash"># download &amp; store releases and be extra noisy
+$ npm run grm download -- --keep releases --verbose 2
+</code></pre>
+<h2 id="contributions">Contributions</h2>
+<p><a href="https://github.com/lodash/lodash.github.io/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="contributions welcome"></a>
+<a href="https://github.com/justinhelmer/lodash.github.io"><img src="https://david-dm.org/justinhelmer/lodash.github.io/dev-status.svg" alt="devDependency status"></a></p>
+<h2 id="more-help">More help</h2>
+<p>See the <a href="https://github.com/justinhelmer/gh-release-manager">GitHub Release Manager</a> docs.</p>
 
       </section>
     </main>
