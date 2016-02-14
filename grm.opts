@@ -1,5 +1,4 @@
 --build lib/build.js
---docs source/docs
 --lib lodash.js
 --repo lodash/lodash
 --top 1
