@@ -1,6 +1,6 @@
 {
   "name": "lodash.github.io",
-  "version": "0.13.4",
+  "version": "0.13.5",
   "description": "lodash.com web application stack",
   "keywords": [
     "lodash",
@@ -20,7 +20,8 @@
   ],
   "repository": "justinhelmer/lodash.github.io",
   "engines": {
-    "node": ">=0.12"
+    "node": ">=0.12",
+    "npm": "<3"
   },
   "scripts": {
     "coverage": "istanbul cover _mocha --report lcovonly -- --colors -R dot && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
