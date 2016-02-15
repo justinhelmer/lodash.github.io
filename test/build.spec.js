@@ -87,7 +87,7 @@
       it('should create a vinyl wrapper for all vendor assets', function() {
         expect(gulp.src).to.have.been.calledWithExactly([
           'node_modules/normalize-scss/sass/**',
-          'node_modules/support-for/sass/_support-for.scss'
+          'node_modules/normalize-scss/node_modules/support-for/sass/_support-for.scss'
         ]);
       });
 
