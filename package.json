@@ -27,7 +27,7 @@
     "coverage": "istanbul cover _mocha --report lcovonly -- --colors -R dot && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "grm": "grm",
     "start": "grm release --no-deploy && grm serve",
-    "test": "mocha --colors"
+    "test": "./node_modules/mocha/bin/mocha --colors"
   },
   "private": true,
   "devDependencies": {
