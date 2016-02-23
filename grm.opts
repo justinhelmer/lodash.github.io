@@ -1,5 +1,4 @@
 --build lib/build.js
 --lib lodash.js
 --repo lodash/lodash
---top 1
 --url-base /lodash.github.io
