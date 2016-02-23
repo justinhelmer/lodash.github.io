@@ -29,7 +29,7 @@
             </svg>
           </a>
           <div class="trigger">
-            <a class="page-link" href="/lodash.github.io/docs/4.5.1/">Documentation</a>
+            <a class="page-link" href="/lodash.github.io/docs/4.5.1/-_.html">Documentation</a>
           </div>
         </nav>
       </div>
@@ -37,7 +37,70 @@
     <main>
       <section id="content" class="wrapper">
         <h1></h1>
-        <p>This is the index page</p>
+        <h1 id="lodash">Lodash</h1>
+<p>A modern JavaScript utility library delivering modularity, performance, &amp; extras.</p>
+<pre><code class="hljs js"><span class="hljs-number">_</span>.assign({ <span class="hljs-string">'a'</span>: <span class="hljs-number">1</span> }, { <span class="hljs-string">'b'</span>: <span class="hljs-number">2</span> }, { <span class="hljs-string">'c'</span>: <span class="hljs-number">3</span> });
+// → { <span class="hljs-string">'a'</span>: <span class="hljs-number">1</span>, <span class="hljs-string">'b'</span>: <span class="hljs-number">2</span>, <span class="hljs-string">'c'</span>: <span class="hljs-number">3</span> }
+<span class="hljs-number">_</span>.<span class="hljs-keyword">map</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-keyword">function</span>(n) { return n * <span class="hljs-number">3</span>; });
+// → [<span class="hljs-number">3</span>, <span class="hljs-number">6</span>, <span class="hljs-number">9</span>]
+</code></pre>
+<h2 id="download">Download</h2>
+<p>Lodash is released under the <a href="https://raw.githubusercontent.com/lodash/lodash/4.5.1/LICENSE">MIT license</a> &amp; supports <a href="https://lodash.com/#support">modern environments</a>.
+Review the <a href="https://github.com/lodash/lodash/wiki/build-differences">build differences</a> &amp; pick one that’s right for you.</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/lodash/lodash/4.5.1/dist/lodash.core.js">Core build</a> (<a href="https://raw.githubusercontent.com/lodash/lodash/4.5.1/dist/lodash.core.min.js">~4 kB gzipped</a>)</li>
+<li><a href="https://raw.githubusercontent.com/lodash/lodash/4.5.1/dist/lodash.js">Full build</a> (<a href="https://raw.githubusercontent.com/lodash/lodash/4.5.1/dist/lodash.min.js">~21 kB gzipped</a>)</li>
+<li><a href="https://www.jsdelivr.com/projects/lodash">CDN copies</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>In a browser:</p>
+<pre><code class="hljs js"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"lodash.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>Using npm:</p>
+<pre><code class="hljs bash">$ {sudo -H} <span class="hljs-built_in">npm</span> i -g <span class="hljs-built_in">npm</span>
+$ <span class="hljs-built_in">npm</span> i --save lodash
+</code></pre>
+<p>In Node.js:</p>
+<pre><code class="hljs js">// <span class="hljs-keyword">Load</span> the <span class="hljs-keyword">full</span> <span class="hljs-keyword">build</span>.
+<span class="hljs-keyword">var</span> _ = require(<span class="hljs-string">'lodash'</span>);
+// <span class="hljs-keyword">Load</span> the core <span class="hljs-keyword">build</span>.
+<span class="hljs-keyword">var</span> _ = require(<span class="hljs-string">'lodash/core'</span>);
+// <span class="hljs-keyword">Load</span> the fp <span class="hljs-keyword">build</span> <span class="hljs-keyword">for</span> immutable <span class="hljs-keyword">auto</span>-curried iteratee-<span class="hljs-keyword">first</span> <span class="hljs-keyword">data</span>-<span class="hljs-keyword">last</span> methods.
+<span class="hljs-keyword">var</span> _ = require(<span class="hljs-string">'lodash/fp'</span>);
+
+// <span class="hljs-keyword">Load</span> a method <span class="hljs-keyword">category</span>.
+<span class="hljs-keyword">var</span> <span class="hljs-built_in">array</span> = require(<span class="hljs-string">'lodash/array'</span>);
+var object = require('lodash/fp/object');
+
+// <span class="hljs-keyword">Load</span> a single method <span class="hljs-keyword">for</span> smaller builds <span class="hljs-keyword">with</span> browserify/<span class="hljs-keyword">rollup</span>/webpack.
+<span class="hljs-keyword">var</span> <span class="hljs-keyword">chunk</span> = require(<span class="hljs-string">'lodash/chunk'</span>);
+var extend = require('lodash/fp/extend');
+</code></pre>
+<h2 id="why-lodash-">Why Lodash?</h2>
+<p>Lodash makes JavaScript easier by taking the hassle out of working with arrays,
+numbers, objects, strings, etc. Lodash’s modular methods are great for:</p>
+<ul>
+<li>Iterating arrays, objects, &amp; strings</li>
+<li>Manipulating &amp; testing values</li>
+<li>Creating composite functions</li>
+</ul>
+<h2 id="module-formats">Module Formats</h2>
+<p>Lodash is available in a <a href="https://lodash.com/custom-builds">variety of builds</a> &amp; module formats.</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/lodash">lodash</a> &amp; <a href="https://www.npmjs.com/browse/keyword/lodash-modularized">per method packages</a></li>
+<li><a href="https://www.npmjs.com/package/lodash-amd">lodash-amd</a></li>
+<li><a href="https://www.npmjs.com/package/lodash-es">lodash-es</a> &amp; <a href="https://www.npmjs.com/package/babel-plugin-lodash">babel-plugin-lodash</a></li>
+<li><a href="https://github.com/lodash/lodash/tree/4.5.1-npm/fp">lodash/fp</a></li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="https://github.com/lodash/lodash/blob/4.5.1/.github/CONTRIBUTING.md">Contributing</a></li>
+<li><a href="https://github.com/lodash/lodash/releases/tag/4.0.0">Release Notes</a></li>
+<li><a href="https://github.com/lodash/lodash/wiki">Wiki (Changelog, Roadmap, etc.)</a></li>
+</ul>
+<h2 id="support">Support</h2>
+<p>Tested in Chrome 47-48, Firefox 43-44, IE 9-11, Edge 13, Safari 8-9, Node.js 0.10, 0.12, 4, &amp; 5, &amp; PhantomJS 1.9.8.</p>
+<p>Automated <a href="https://saucelabs.com/u/lodash">browser</a> &amp; <a href="https://travis-ci.org/lodash/">CI</a> test runs are available.</p>
 
       </section>
     </main>
