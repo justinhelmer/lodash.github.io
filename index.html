@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/lodash.github.io/favicon.ico"/>
-    <title>Lodash.com</title>
+    <title>Lodash | Lodash.com</title>
     <meta name="description" content="">
     <link href='http://fonts.googleapis.com/css?family=Cantora+One|Ropa+Sans:400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/lodash.github.io/css/main.css">
@@ -36,13 +36,12 @@
     </header>
     <main>
       <section id="content" class="wrapper">
-        <h1></h1>
-        <h1 id="lodash">Lodash</h1>
-<p>A modern JavaScript utility library delivering modularity, performance, &amp; extras.</p>
-<pre><code class="hljs js"><span class="hljs-number">_</span>.assign({ <span class="hljs-string">'a'</span>: <span class="hljs-number">1</span> }, { <span class="hljs-string">'b'</span>: <span class="hljs-number">2</span> }, { <span class="hljs-string">'c'</span>: <span class="hljs-number">3</span> });
-// → { <span class="hljs-string">'a'</span>: <span class="hljs-number">1</span>, <span class="hljs-string">'b'</span>: <span class="hljs-number">2</span>, <span class="hljs-string">'c'</span>: <span class="hljs-number">3</span> }
-<span class="hljs-number">_</span>.<span class="hljs-keyword">map</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-keyword">function</span>(n) { return n * <span class="hljs-number">3</span>; });
-// → [<span class="hljs-number">3</span>, <span class="hljs-number">6</span>, <span class="hljs-number">9</span>]
+        <h1>Lodash</h1>
+        <p>A modern JavaScript utility library delivering modularity, performance, &amp; extras.</p>
+<pre><code class="hljs js">_.assign({ <span class="hljs-string">'a'</span>: <span class="hljs-number">1</span> }, { <span class="hljs-string">'b'</span>: <span class="hljs-number">2</span> }, { <span class="hljs-string">'c'</span>: <span class="hljs-number">3</span> });
+<span class="hljs-comment">// → { 'a': 1, 'b': 2, 'c': 3 }</span>
+_.map([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">n</span>) </span>{ <span class="hljs-keyword">return</span> n * <span class="hljs-number">3</span>; });
+<span class="hljs-comment">// → [3, 6, 9]</span>
 </code></pre>
 <h2 id="download">Download</h2>
 <p>Lodash is released under the <a href="https://raw.githubusercontent.com/lodash/lodash/4.5.1/LICENSE">MIT license</a> &amp; supports <a href="https://lodash.com/#support">modern environments</a>.
@@ -54,27 +53,27 @@ Review the <a href="https://github.com/lodash/lodash/wiki/build-differences">bui
 </ul>
 <h2 id="installation">Installation</h2>
 <p>In a browser:</p>
-<pre><code class="hljs js"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"lodash.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<pre><code class="hljs js">&lt;script src=<span class="hljs-string">"lodash.js"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
 </code></pre>
 <p>Using npm:</p>
-<pre><code class="hljs bash">$ {sudo -H} <span class="hljs-built_in">npm</span> i -g <span class="hljs-built_in">npm</span>
-$ <span class="hljs-built_in">npm</span> i --save lodash
+<pre><code class="hljs bash">$ {sudo -H} npm i -g npm
+$ npm i --save lodash
 </code></pre>
 <p>In Node.js:</p>
-<pre><code class="hljs js">// <span class="hljs-keyword">Load</span> the <span class="hljs-keyword">full</span> <span class="hljs-keyword">build</span>.
-<span class="hljs-keyword">var</span> _ = require(<span class="hljs-string">'lodash'</span>);
-// <span class="hljs-keyword">Load</span> the core <span class="hljs-keyword">build</span>.
-<span class="hljs-keyword">var</span> _ = require(<span class="hljs-string">'lodash/core'</span>);
-// <span class="hljs-keyword">Load</span> the fp <span class="hljs-keyword">build</span> <span class="hljs-keyword">for</span> immutable <span class="hljs-keyword">auto</span>-curried iteratee-<span class="hljs-keyword">first</span> <span class="hljs-keyword">data</span>-<span class="hljs-keyword">last</span> methods.
-<span class="hljs-keyword">var</span> _ = require(<span class="hljs-string">'lodash/fp'</span>);
+<pre><code class="hljs js"><span class="hljs-comment">// Load the full build.</span>
+<span class="hljs-keyword">var</span> _ = <span class="hljs-built_in">require</span>(<span class="hljs-string">'lodash'</span>);
+<span class="hljs-comment">// Load the core build.</span>
+<span class="hljs-keyword">var</span> _ = <span class="hljs-built_in">require</span>(<span class="hljs-string">'lodash/core'</span>);
+<span class="hljs-comment">// Load the fp build for immutable auto-curried iteratee-first data-last methods.</span>
+<span class="hljs-keyword">var</span> _ = <span class="hljs-built_in">require</span>(<span class="hljs-string">'lodash/fp'</span>);
 
-// <span class="hljs-keyword">Load</span> a method <span class="hljs-keyword">category</span>.
-<span class="hljs-keyword">var</span> <span class="hljs-built_in">array</span> = require(<span class="hljs-string">'lodash/array'</span>);
-var object = require('lodash/fp/object');
+<span class="hljs-comment">// Load a method category.</span>
+<span class="hljs-keyword">var</span> array = <span class="hljs-built_in">require</span>(<span class="hljs-string">'lodash/array'</span>);
+<span class="hljs-keyword">var</span> object = <span class="hljs-built_in">require</span>(<span class="hljs-string">'lodash/fp/object'</span>);
 
-// <span class="hljs-keyword">Load</span> a single method <span class="hljs-keyword">for</span> smaller builds <span class="hljs-keyword">with</span> browserify/<span class="hljs-keyword">rollup</span>/webpack.
-<span class="hljs-keyword">var</span> <span class="hljs-keyword">chunk</span> = require(<span class="hljs-string">'lodash/chunk'</span>);
-var extend = require('lodash/fp/extend');
+<span class="hljs-comment">// Load a single method for smaller builds with browserify/rollup/webpack.</span>
+<span class="hljs-keyword">var</span> chunk = <span class="hljs-built_in">require</span>(<span class="hljs-string">'lodash/chunk'</span>);
+<span class="hljs-keyword">var</span> extend = <span class="hljs-built_in">require</span>(<span class="hljs-string">'lodash/fp/extend'</span>);
 </code></pre>
 <h2 id="why-lodash-">Why Lodash?</h2>
 <p>Lodash makes JavaScript easier by taking the hassle out of working with arrays,
