@@ -37,7 +37,7 @@
     "dirty-chai": "^1.2.2",
     "eslint-config-google": "^0.3.0",
     "eslint-plugin-mocha": "^1.1.0",
-    "gh-release-manager": "^0.15.4",
+    "gh-release-manager": "^0.15.5",
     "gulp": "^3.9.1",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
