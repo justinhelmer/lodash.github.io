@@ -1,6 +1,6 @@
 {
   "name": "lodash.github.io",
-  "version": "0.17.2",
+  "version": "0.17.3",
   "description": "lodash.com web application stack",
   "keywords": [
     "lodash",
@@ -35,6 +35,7 @@
     "chai": "^3.5.0",
     "coveralls": "^2.11.6",
     "dirty-chai": "^1.2.2",
+    "docdash": "^0.1.0",
     "eslint-config-google": "^0.3.0",
     "eslint-plugin-mocha": "^1.1.0",
     "gh-release-manager": "^0.17.1",
